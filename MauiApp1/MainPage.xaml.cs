@@ -5,6 +5,9 @@ public partial class MainPage : ContentPage
 {
 	// int count = 0;
 	private bool IsPasswordValid(string pass1, string pass2) {
+		// Esta funcion revisara si las contraseñas no estan vacias, si son 
+		// iguales y si cumplen con el patron REGEX valido. 
+
 		// check if any is empty or null
 		if (string.IsNullOrEmpty(pass1) || string.IsNullOrEmpty(pass2)) {
 			return false;
@@ -22,6 +25,8 @@ public partial class MainPage : ContentPage
 	}
 
 	private void OnSubmitClicked(object sender, EventArgs e) {
+		// Funcion que sera ejecutada una vez demos click en el boton 
+		// para validar el password
 		// Get the text from the Entry field
 		string inputPass = entPass1.Text;
 		string repeatPass = entPass2.Text;
@@ -34,7 +39,6 @@ public partial class MainPage : ContentPage
 			// show alert with message "Password is valid"
 			DisplayAlert("Validación de password", "Password is valid", "OK");
 		}
-		
 	}
 }
 

@@ -23,27 +23,22 @@
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
-
-            <!-- <Button
-                x:Name="CounterBtn"
-                Text="Click me" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" /> -->
             
+            <!-- Campo para que el usuario ingrese la contrase;a por primera vez  -->
             <Entry
                 x:Name="entPass1"
                 Placeholder="Enter password"
                 HorizontalOptions="Fill"
                 IsPassword="True"/>
-            
+
+            <!-- Campo para repetir contraseña -->
             <Entry
                 x:Name="entPass2"
                 Placeholder="Repeat password"
                 HorizontalOptions="Fill" 
                 IsPassword="True"/>
-                
             
+            <!-- Boton para realizar la validacion de las contraseñas -->
             <Button
                 x:Name="btnSubmit"
                 Text="Validar"
