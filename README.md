@@ -1,5 +1,5 @@
 # Como correr el programa:
-Por medio del comando: dotnet build -t:Run -f net9.0-maccatalyst 
+Por medio del comando: ‘dotnet build -t:Run -f net9.0-maccatalyst‘ 
 
 # Pantallazo de ejemplo funcionando: 
 
